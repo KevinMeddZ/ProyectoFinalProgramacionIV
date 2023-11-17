@@ -223,6 +223,8 @@
             this.txtNombre.Size = new System.Drawing.Size(504, 23);
             this.txtNombre.TabIndex = 18;
             this.txtNombre.Text = "NOMBRE";
+            this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
+            this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
             // label5
             // 
@@ -246,6 +248,8 @@
             this.txtPrimerApellido.Size = new System.Drawing.Size(504, 23);
             this.txtPrimerApellido.TabIndex = 20;
             this.txtPrimerApellido.Text = "PRIMER APELLIDO";
+            this.txtPrimerApellido.Enter += new System.EventHandler(this.txtPrimerApellido_Enter);
+            this.txtPrimerApellido.Leave += new System.EventHandler(this.txtPrimerApellido_Leave);
             // 
             // label6
             // 
@@ -269,6 +273,8 @@
             this.txtSegundoApellido.Size = new System.Drawing.Size(504, 23);
             this.txtSegundoApellido.TabIndex = 22;
             this.txtSegundoApellido.Text = "SEGUNDO APELLIDO";
+            this.txtSegundoApellido.Enter += new System.EventHandler(this.txtSegundoApellido_Enter);
+            this.txtSegundoApellido.Leave += new System.EventHandler(this.txtSegundoApellido_Leave);
             // 
             // label7
             // 
@@ -292,6 +298,8 @@
             this.txtIdEmpleadoEmpresa.Size = new System.Drawing.Size(504, 23);
             this.txtIdEmpleadoEmpresa.TabIndex = 24;
             this.txtIdEmpleadoEmpresa.Text = "ID EMPLEADO EMPRESA";
+            this.txtIdEmpleadoEmpresa.Enter += new System.EventHandler(this.txtIdEmpleadoEmpresa_Enter);
+            this.txtIdEmpleadoEmpresa.Leave += new System.EventHandler(this.txtIdEmpleadoEmpresa_Leave);
             // 
             // label8
             // 
@@ -334,7 +342,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCrearCuenta";
             this.Text = "FormCrearCuenta";
-    
             this.ResumeLayout(false);
             this.PerformLayout();
 

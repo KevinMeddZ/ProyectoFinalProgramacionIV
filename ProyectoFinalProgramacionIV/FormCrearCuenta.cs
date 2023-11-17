@@ -78,17 +78,13 @@ namespace ProyectoFinalProgramacionIV
 
         
 
+        //ABRE LA VENTANA DE INICIAR SESIÓN
         private void labelIniciarSesion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Hide();
-            Form1 iniciarSesion = new Form1();
-
-            iniciarSesion.ShowDialog(this);
-            Show();
+           
         }
 
-
-        
 
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
@@ -147,6 +143,86 @@ namespace ProyectoFinalProgramacionIV
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }
+        }
+
+        private void txtNombre_Enter(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Equals("NOMBRE"))
+            {
+                txtNombre.Text = "";
+                txtNombre.ForeColor = Color.LightGray;
+                
+            }
+        }
+
+        private void txtNombre_Leave(object sender, EventArgs e)
+        {
+            if (txtNombre.Text.Equals(""))
+            {
+                txtNombre.Text = "NOMBRE";
+                txtNombre.ForeColor = Color.DimGray;
+                
+            }
+        }
+
+        private void txtPrimerApellido_Enter(object sender, EventArgs e)
+        {
+            if (txtPrimerApellido.Text.Equals("PRIMER APELLIDO"))
+            {
+                txtPrimerApellido.Text = "";
+                txtPrimerApellido.ForeColor = Color.LightGray;
+
+            }
+        }
+
+        private void txtPrimerApellido_Leave(object sender, EventArgs e)
+        {
+            if (txtPrimerApellido.Text.Equals(""))
+            {
+                txtPrimerApellido.Text = "PRIMER APELLIDO";
+                txtPrimerApellido.ForeColor = Color.DimGray;
+
+            }
+        }
+
+        private void txtSegundoApellido_Enter(object sender, EventArgs e)
+        {
+            if (txtSegundoApellido.Text.Equals("SEGUNDO APELLIDO"))
+            {
+                txtSegundoApellido.Text = "";
+                txtSegundoApellido.ForeColor = Color.LightGray;
+
+            }
+        }
+
+        private void txtSegundoApellido_Leave(object sender, EventArgs e)
+        {
+            if (txtSegundoApellido.Text.Equals(""))
+            {
+                txtSegundoApellido.Text = "SEGUNDO APELLIDO";
+                txtSegundoApellido.ForeColor = Color.DimGray;
+
+            }
+        }
+
+        private void txtIdEmpleadoEmpresa_Enter(object sender, EventArgs e)
+        {
+            if (txtIdEmpleadoEmpresa.Text.Equals("ID EMPLEADO EMPRESA"))
+            {
+                txtIdEmpleadoEmpresa.Text = "";
+                txtIdEmpleadoEmpresa.ForeColor = Color.LightGray;
+
+            }
+        }
+
+        private void txtIdEmpleadoEmpresa_Leave(object sender, EventArgs e)
+        {
+            if (txtIdEmpleadoEmpresa.Text.Equals(""))
+            {
+                txtIdEmpleadoEmpresa.Text = "ID EMPLEADO EMPRESA";
+                txtIdEmpleadoEmpresa.ForeColor = Color.DimGray;
+
             }
         }
     }
