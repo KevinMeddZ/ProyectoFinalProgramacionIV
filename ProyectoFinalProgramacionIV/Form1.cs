@@ -131,10 +131,6 @@ namespace ProyectoFinalProgramacionIV
         }
 
 
-
-
-
-
         //FUNCION QUE VALIDA EL ACCESO DEL USUARIO
         private Boolean validarLogin(string cedula, string contraseña, string token)
         {
