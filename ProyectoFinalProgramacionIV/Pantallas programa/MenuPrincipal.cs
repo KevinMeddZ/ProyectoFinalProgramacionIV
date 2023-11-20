@@ -17,6 +17,7 @@ namespace ProyectoFinalProgramacionIV.Pantallas_programa
             InitializeComponent();
         }
 
+        //CIERRA EL FORM
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
