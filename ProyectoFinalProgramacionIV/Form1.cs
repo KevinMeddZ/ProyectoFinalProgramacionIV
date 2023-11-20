@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinalProgramacionIV.Pantallas_programa;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -124,6 +125,10 @@ namespace ProyectoFinalProgramacionIV
             if (this.validarLogin(cedula, contraseña, token) == true)
             {
                 MessageBox.Show("ACCESO PERMITIDO");
+                Hide();
+                MenuPrincipal mp = new MenuPrincipal();
+                mp.ShowDialog(this);
+                Show();
             }else
             {
                 MessageBox.Show("ACCESO DENEGADO");
@@ -138,7 +143,7 @@ namespace ProyectoFinalProgramacionIV
             string consulta = "";
             //BOOLEANO QUE LE DA ACCESO AL USUARIO
             bool acceso = false;
-
+            
 
             //VERIFICO DATOS EN LA BASE DE DATOS
 

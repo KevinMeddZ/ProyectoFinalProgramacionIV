@@ -13,8 +13,15 @@ namespace ProyectoFinalProgramacionIV
         public static SqlConnection conectar()
         {
             SqlConnection cn = new SqlConnection("SERVER=KEVIN\\SQLEXPRESS; DATABASE = db_ProyectoPrograIV; Integrated security=true");
-            cn.Open();
+
+            //SI LA CONEXION ESTA CERRADA LA ABRE
+            if (cn.State == System.Data.ConnectionState.Closed) {
+                cn.Open();
+                  
+            }
+
             return cn;
+
         }
     }
 }
