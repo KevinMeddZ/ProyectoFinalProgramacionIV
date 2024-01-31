@@ -62,11 +62,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="DatosCompartidos.cs" />
+    <Compile Include="SubmenúInstalaciones\FormActualizarInstalacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SubmenúInstalaciones\FormActualizarInstalacion.Designer.cs">
+      <DependentUpon>FormActualizarInstalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas programa\FormAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas programa\FormAcercaDe.Designer.cs">
+      <DependentUpon>FormAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenuDepartamentos\FormConsultarDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuDepartamentos\FormConsultarDep.Designer.cs">
+      <DependentUpon>FormConsultarDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenuDepartamentos\FormEliminarDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuDepartamentos\FormEliminarDep.Designer.cs">
+      <DependentUpon>FormEliminarDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCrearCuenta.cs">
       <SubType>Form</SubType>
@@ -82,8 +107,110 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="SubMenuDepartamentos\RegistrarNuevoDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuDepartamentos\RegistrarNuevoDepartamento.Designer.cs">
+      <DependentUpon>RegistrarNuevoDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúInstalaciones\FormConsultarInstalaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúInstalaciones\FormConsultarInstalaciones.Designer.cs">
+      <DependentUpon>FormConsultarInstalaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúInstalaciones\FormEliminarInstalaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúInstalaciones\FormEliminarInstalaciones.Designer.cs">
+      <DependentUpon>FormEliminarInstalaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúSoftware\RegistrarSofwarecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúSoftware\RegistrarSofwarecs.Designer.cs">
+      <DependentUpon>RegistrarSofwarecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúComputadoras\FormAsignarCPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúComputadoras\FormAsignarCPU.Designer.cs">
+      <DependentUpon>FormAsignarCPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúComputadoras\FormConsultarCpus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúComputadoras\FormConsultarCpus.Designer.cs">
+      <DependentUpon>FormConsultarCpus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúComputadoras\FormInsertarComputadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúComputadoras\FormInsertarComputadora.Designer.cs">
+      <DependentUpon>FormInsertarComputadora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúComputadoras\FormEliminarCPU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúComputadoras\FormEliminarCPU.Designer.cs">
+      <DependentUpon>FormEliminarCPU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúCuentas\FormActualizarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúCuentas\FormActualizarCuenta.Designer.cs">
+      <DependentUpon>FormActualizarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúCuentas\FormConsultarCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúCuentas\FormConsultarCuentas.Designer.cs">
+      <DependentUpon>FormConsultarCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúCuentas\FormEliminarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúCuentas\FormEliminarCuenta.Designer.cs">
+      <DependentUpon>FormEliminarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúInstalaciones\FormInstalarSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúInstalaciones\FormInstalarSoftware.Designer.cs">
+      <DependentUpon>FormInstalarSoftware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúSoftware\FormActualizarSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúSoftware\FormActualizarSoftware.Designer.cs">
+      <DependentUpon>FormActualizarSoftware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúSoftware\FormConsultaSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúSoftware\FormConsultaSoftware.Designer.cs">
+      <DependentUpon>FormConsultaSoftware.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubmenúSoftware\FormEliminarSoftware.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmenúSoftware\FormEliminarSoftware.Designer.cs">
+      <DependentUpon>FormEliminarSoftware.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SubmenúInstalaciones\FormActualizarInstalacion.resx">
+      <DependentUpon>FormActualizarInstalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas programa\FormAcercaDe.resx">
+      <DependentUpon>FormAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenuDepartamentos\FormConsultarDep.resx">
+      <DependentUpon>FormConsultarDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenuDepartamentos\FormEliminarDep.resx">
+      <DependentUpon>FormEliminarDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCrearCuenta.resx">
       <DependentUpon>FormCrearCuenta.cs</DependentUpon>
@@ -100,6 +227,59 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SubMenuDepartamentos\RegistrarNuevoDepartamento.resx">
+      <DependentUpon>RegistrarNuevoDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúInstalaciones\FormConsultarInstalaciones.resx">
+      <DependentUpon>FormConsultarInstalaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúInstalaciones\FormEliminarInstalaciones.resx">
+      <DependentUpon>FormEliminarInstalaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúSoftware\RegistrarSofwarecs.resx">
+      <DependentUpon>RegistrarSofwarecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúComputadoras\FormAsignarCPU.resx">
+      <DependentUpon>FormAsignarCPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúComputadoras\FormConsultarCpus.resx">
+      <DependentUpon>FormConsultarCpus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúComputadoras\FormInsertarComputadora.resx">
+      <DependentUpon>FormInsertarComputadora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúComputadoras\FormEliminarCPU.resx">
+      <DependentUpon>FormEliminarCPU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúCuentas\FormActualizarCuenta.resx">
+      <DependentUpon>FormActualizarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúCuentas\FormConsultarCuentas.resx">
+      <DependentUpon>FormConsultarCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúCuentas\FormEliminarCuenta.resx">
+      <DependentUpon>FormEliminarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúInstalaciones\FormInstalarSoftware.resx">
+      <DependentUpon>FormInstalarSoftware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúSoftware\FormActualizarSoftware.resx">
+      <DependentUpon>FormActualizarSoftware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúSoftware\FormConsultaSoftware.resx">
+      <DependentUpon>FormConsultaSoftware.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmenúSoftware\FormEliminarSoftware.resx">
+      <DependentUpon>FormEliminarSoftware.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Content\icons8-male-user-96.png" />
+    <Content Include="Content\login.png" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -124,6 +304,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

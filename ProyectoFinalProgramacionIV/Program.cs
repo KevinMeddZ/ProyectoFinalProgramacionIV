@@ -1,4 +1,5 @@
 ﻿using ProyectoFinalProgramacionIV.Pantallas_programa;
+using ProyectoFinalProgramacionIV.SubmenúInstalaciones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,16 @@ namespace ProyectoFinalProgramacionIV
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+
         [STAThread]
         static void Main()
-        {
+        {   //Habilida estilos visuales de la app//
             Application.EnableVisualStyles();
+            //Establece valor prederterminado para el uso de controles //   
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            // Inicia ejecucion del programa en respectivo FORM //
+            Application.Run(new Login());
         }
     }
 }

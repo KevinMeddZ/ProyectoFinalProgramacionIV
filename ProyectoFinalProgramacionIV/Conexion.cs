@@ -9,10 +9,15 @@ namespace ProyectoFinalProgramacionIV
 {
     internal class Conexion
     {
-
+        //CLASE PARA CONEXION  A BASE DE DATOS//
         public static SqlConnection conectar()
         {
-            SqlConnection cn = new SqlConnection("SERVER=KEVIN\\SQLEXPRESS; DATABASE = db_ProyectoPrograIV; Integrated security=true");
+            string kevin = "KEVIN\\SQLEXPRESS";
+            string ronald = "DESKTOP-T1V2NRK\\SQLEXPRESS";
+
+            // Cadena de conexion SQL SERVER//
+
+            SqlConnection cn = new SqlConnection("Data Source=KEVIN\\SQLEXPRESS;Initial Catalog=db_ProyectoPrograIV;Integrated Security=True;");
 
             //SI LA CONEXION ESTA CERRADA LA ABRE
             if (cn.State == System.Data.ConnectionState.Closed) {
